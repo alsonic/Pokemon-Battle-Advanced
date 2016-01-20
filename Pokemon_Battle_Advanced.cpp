@@ -618,8 +618,11 @@ int main()
 	cin >> choice;
 
 	int compchoice;
-	srand(time(0));
-	compchoice = (rand() % NUMBER_OF_POKEMON) + 1;
+	do
+	{
+		srand(time(0));
+		compchoice = (rand() % NUMBER_OF_POKEMON) + 1;
+	} while (choice == compchoice);
 
 	Pikachu Pika;
 	Bulbasaur Bulba;
