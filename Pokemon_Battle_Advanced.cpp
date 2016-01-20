@@ -814,21 +814,22 @@ int main()
 				{
 					if (choice == 1)
 					{
-						cout << "Pikachu uses Potion. Health replenished by 50 HP.\n\n";
+						cout << "Pikachu uses Potion. Health replenished by " << POTION_STR << " HP.\n\n";
 					}
 					else if (choice == 2)
 					{
-						cout << "Bulbasaur uses Potion. Health replenished by 50 HP.\n\n";
+						cout << "Bulbasaur uses Potion. Health replenished by " << POTION_STR << " HP.\n\n";
 					}
 					else if (choice == 3)
 					{
-						cout << "Charmander uses Potion. Health replenished by 50 HP.\n\n";
+						cout << "Charmander uses Potion. Health replenished by " << POTION_STR << " HP.\n\n";
 					}
 					else
 					{
-						cout << "Squirtle uses Potion. Health replenished by 50 HP.\n\n";
+						cout << "Squirtle uses Potion. Health replenished by " << POTION_STR << " HP.\n\n";
 					}
 					(*Player1).Potion();
+					potion_count_p1--;
 					break;
 				}
 				else
@@ -891,19 +892,19 @@ int main()
 			{
 				if (compchoice == 1)
 				{
-					cout << "Pikachu uses Potion. Health replenished by 50 HP.\n\n";
+					cout << "Pikachu uses Potion. Health replenished by " << POTION_STR << " HP.\n\n";
 				}
 				else if (compchoice == 2)
 				{
-					cout << "Bulbasaur uses Potion. Health replenished by 50 HP.\n\n";
+					cout << "Bulbasaur uses Potion. Health replenished by " << POTION_STR << " HP.\n\n";
 				}
 				else if (compchoice == 3)
 				{
-					cout << "Charmander uses Potion. Health replenished by 50 HP.\n\n";
+					cout << "Charmander uses Potion. Health replenished by " << POTION_STR << " HP.\n\n";
 				}
 				else
 				{
-					cout << "Squirtle uses Potion. Health replenished by 50 HP.\n\n";
+					cout << "Squirtle uses Potion. Health replenished by " << POTION_STR << " HP.\n\n";
 				}
 				(*Player2).Potion();
 				potion_count_p2--;
